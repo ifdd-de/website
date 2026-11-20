@@ -65,8 +65,13 @@
     darf alle Contexts darunter lesen.</p>
 
     <h3>Hostnamen von Demo-Knoten</h3>
-    <p><code>&lt;node&gt;.grid.example.ifdd.de</code></p>
-    <p>Für Demo-Knoten reserviert. Heute gibt es keinen.</p>
+    <p><code>&lt;node&gt;.grid.example.ifdd.de</code>,
+    <code>&lt;service&gt;.&lt;node&gt;.grid.example.ifdd.de</code></p>
+    <p>Für Demo-Knoten und ihre Dienste reserviert, etwa
+    <code>demo.grid.example.ifdd.de</code> und
+    <code>rest.demo.grid.example.ifdd.de</code>. Jeder Hostname bekommt einen
+    eigenen Eintrag; eine Wildcard gibt es nicht. Heute ist kein Demo-Knoten
+    öffentlich.</p>
     <p class="note">Ein Name unter <code>example.ifdd.de</code> ist also nicht
     unbedingt ein Host. Löst er nicht auf, ist nichts kaputt.
     <code>example.ifdd.de</code> selbst führt nur auf diese Seite.</p>

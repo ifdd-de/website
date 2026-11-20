@@ -61,8 +61,12 @@
     pattern <code>grid.example.ifdd.de</code> may read every context below it.</p>
 
     <h3>Host names of demo nodes</h3>
-    <p><code>&lt;node&gt;.grid.example.ifdd.de</code></p>
-    <p>Reserved for demo nodes. None exists today.</p>
+    <p><code>&lt;node&gt;.grid.example.ifdd.de</code>,
+    <code>&lt;service&gt;.&lt;node&gt;.grid.example.ifdd.de</code></p>
+    <p>Reserved for demo nodes and their services, for instance
+    <code>demo.grid.example.ifdd.de</code> and
+    <code>rest.demo.grid.example.ifdd.de</code>. Every host name gets a record of
+    its own; there is no wildcard. No demo node is public today.</p>
     <p class="note">A name under <code>example.ifdd.de</code> is therefore not
     necessarily a host. If it does not resolve, nothing is broken.
     <code>example.ifdd.de</code> itself only leads to this page.</p>

@@ -38,9 +38,9 @@
     <p class="lead">All repositories of the GitHub organisation
     <a href="https://github.com/ifdd-de"><code>ifdd-de</code></a> are public and licensed under
     BSD-3-Clause.</p>
-    <p>Each service is a cookiecutter template. An operator generates an instance
-    with <code>cruft</code> and keeps it in a repository of their own;
-    <code>cruft update</code> brings later template changes in.</p>
+    <p>Each service is a cookiecutter template, and so is the model. An operator
+    generates an instance with <code>cruft</code> and keeps it in a repository of
+    their own; <code>cruft update</code> brings later template changes in.</p>
     <h2>Concept</h2>
     <div class="table-scroll">
     <table class="repos">
@@ -85,6 +85,10 @@
           <td>Static service for units and quantity kinds, linked to QUDT.</td>
         </tr>
         <tr>
+          <td><a href="https://github.com/ifdd-de/model"><code>model</code></a></td>
+          <td>LinkML sources from which the contexts, vocabularies and units of <code>schema</code>, <code>type</code> and <code>unit</code> are generated. Prototype.</td>
+        </tr>
+        <tr>
           <td><a href="https://github.com/ifdd-de/ct"><code>ct</code></a></td>
           <td>Core tools: a CLI that generates, checks and loads JSON-LD records.</td>
         </tr>
@@ -99,6 +103,10 @@
         <tr>
           <td><a href="https://github.com/ifdd-de/wf"><code>wf</code></a></td>
           <td>Workflows: Kestra with Jupyter notebooks.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/lab"><code>lab</code></a></td>
+          <td>Notebooks (JupyterHub): one container per user; a notebook calls the services with the rights of the person logged in. In development.</td>
         </tr>
       </tbody>
     </table>
@@ -118,6 +126,17 @@
       </tbody>
     </table>
     </div>
+    <h2>Installation</h2>
+    <div class="table-scroll">
+    <table class="repos">
+      <tbody>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/meta"><code>meta</code></a></td>
+          <td><code>ifdd-meta</code>: builds, runs and tests a complete installation from the templates. In development.</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
     <h2>Tools</h2>
     <div class="table-scroll">
     <table class="repos">
@@ -125,6 +144,14 @@
         <tr>
           <td><a href="https://github.com/ifdd-de/tools-pentest"><code>tools-pentest</code></a></td>
           <td>Containerised vulnerability scanning &mdash; for your own systems only.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/tools-sbom"><code>tools-sbom</code></a></td>
+          <td>Software bill of materials (SBOM) as Markdown for Sphinx, from <code>requirements.txt</code>, <code>pyproject.toml</code> and <code>package.json</code>, with licences and known vulnerabilities.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/tools-linkml-graph"><code>tools-linkml-graph</code></a></td>
+          <td>Renders LinkML instance data as documents and as standalone interactive graphs.</td>
         </tr>
         <tr>
           <td><a href="https://github.com/ifdd-de/website"><code>website</code></a></td>

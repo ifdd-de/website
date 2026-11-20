@@ -57,16 +57,26 @@
           <td><a href="https://pypi.org/project/ifdd-ts-core/">PyPI</a><br>
           <a href="https://github.com/ifdd-de/ts-core">GitHub</a></td>
         </tr>
+        <tr>
+          <td><code>sphinx-sbom-generator</code></td>
+          <td><code>sbom_generator</code></td>
+          <td>Kommandozeilen-Werkzeug, das aus <code>requirements.txt</code>, <code>pyproject.toml</code> und <code>package.json</code> eine Software-Stückliste (SBOM) als Markdown für Sphinx schreibt: Lizenzen, neueste Versionen und bekannte Schwachstellen, auf Wunsch mit transitiven Abhängigkeiten.</td>
+          <td><a href="https://pypi.org/project/sphinx-sbom-generator/">PyPI</a><br>
+          <a href="https://github.com/ifdd-de/tools-sbom">GitHub</a></td>
+        </tr>
       </tbody>
     </table>
     </div>
 
     <h2>Installation</h2>
     <pre><code>pip install ifdd-be-core
-pip install ifdd-ts-core</code></pre>
-    <p>Die Pakete sind die Laufzeit der Dienste, die aus den Templates entstehen;
-    die Templates bringen die passende Version mit. Versionen folgen dem Schema
-    <code>JJ.MM.N</code>: Jahr, Monat und eine laufende Nummer.</p>
+pip install ifdd-ts-core
+pip install sphinx-sbom-generator</code></pre>
+    <p><code>ifdd-be-core</code> und <code>ifdd-ts-core</code> sind die Laufzeit der
+    Dienste, die aus den Templates entstehen; die Templates bringen die passende
+    Version mit. Ihre Versionen folgen dem Schema <code>JJ.MM.N</code>: Jahr,
+    Monat und eine laufende Nummer. <code>sphinx-sbom-generator</code> ist ein
+    eigenständiges Werkzeug und folgt Semantic Versioning.</p>
 
     <h2>Fragen und Probleme</h2>
     <p>Bitte ein Issue im Repository des Pakets anlegen (gern englisch). Für

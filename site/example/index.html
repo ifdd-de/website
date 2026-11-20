@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example namespace | IFDD</title>
+  <meta name="description" content="What names under example.ifdd.de mean: a fictional organisation used in IFDD documentation, templates and test data.">
+  <link rel="canonical" href="https://ifdd.de/example/">
+  <link rel="alternate" hreflang="en" href="https://ifdd.de/example/">
+  <link rel="alternate" hreflang="de" href="https://ifdd.de/de/example/">
+  <link rel="alternate" hreflang="x-default" href="https://ifdd.de/example/">
+  <link rel="icon" href="../assets/ifdd-favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/ifdd-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../">
+        <picture>
+          <source srcset="../assets/ifdd-monogram-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="../assets/ifdd-monogram-light.svg" alt="IFDD logo" width="40" height="40">
+        </picture>
+        <span>ifdd.de</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../example/" aria-current="page">Example namespace</a>
+        <a href="../packages/">Packages</a>
+        <a href="../repositories/">Repositories</a>
+        <a href="https://github.com/ifdd-de/overview">Concepts</a>
+        <a class="lang" href="../de/example/" hreflang="de" lang="de">Deutsch</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+
+    <h1>The example namespace</h1>
+    <p class="lead">You probably met a name like
+    <code>breaker.grid.example.ifdd.de</code> in documentation, test data or a
+    schema and wondered what is behind it. Nothing real &mdash; on purpose.</p>
+
+    <h2>A fictional organisation</h2>
+    <p><code>example</code> is a fictional organisation. IFDD documentation,
+    templates and test data use it so that no real organisation, system or
+    host name appears in them. It runs an electricity grid and has two domains:</p>
+    <ul>
+      <li><strong>grid</strong> keeps the asset register, for example circuit
+      breakers;</li>
+      <li><strong>ops</strong> keeps the maintenance plan.</li>
+    </ul>
+    <p>All data of the example is generated. It describes no real equipment.</p>
+
+    <h2>Two kinds of names</h2>
+    <h3>Context names</h3>
+    <p><code>breaker.grid.example.ifdd.de</code>,
+    <code>maintenance.ops.example.ifdd.de</code></p>
+    <p>A context name names a JSON-LD context. It is written like a DNS name and
+    read from the right: <code>breaker</code> belongs to <code>grid</code>,
+    which belongs to <code>example</code>. Such a name does not resolve and does
+    not need to. Access rights follow it: a client with a read role and the
+    pattern <code>grid.example.ifdd.de</code> may read every context below it.</p>
+
+    <h3>Host names of demo nodes</h3>
+    <p><code>&lt;node&gt;.grid.example.ifdd.de</code></p>
+    <p>Reserved for demo nodes. None exists today.</p>
+    <p class="note">A name under <code>example.ifdd.de</code> is therefore not
+    necessarily a host. If it does not resolve, nothing is broken.
+    <code>example.ifdd.de</code> itself only leads to this page.</p>
+
+    <h2>Why a namespace of its own</h2>
+    <p>Examples need names that look like the real thing but can never collide
+    with a real domain. The idea is the same as with <code>example.org</code>;
+    <code>example.ifdd.de</code>, however, is reserved only by a decision of this
+    project, not by a standard.</p>
+
+    <h2>Read more</h2>
+    <ul>
+      <li><a href="https://github.com/ifdd-de/overview/blob/main/docs/concepts/00-introduction.md">A short walk through IFDD</a> &mdash; the example
+      organisation step by step</li>
+      <li><a href="https://github.com/ifdd-de/overview/blob/main/docs/concepts/02-namespace.md">Namespace: names as architecture</a></li>
+      <li><a href="https://github.com/ifdd-de/overview/blob/main/docs/decisions/0002-reserve-example-ifdd-de.md">Decision 0002: reserve example.ifdd.de</a></li>
+    </ul>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li>ifdd.de contributors</li>
+        <li><a href="https://github.com/ifdd-de/website/blob/main/LICENSE">BSD-3-Clause</a></li>
+        <li>Contact: <a href="mailto:maintainers@ifdd.de">maintainers@ifdd.de</a></li>
+        <li><a href="../impressum/" hreflang="de">Legal notice (Impressum, German)</a></li>
+        <li><a href="../datenschutz/" hreflang="de">Privacy (Datenschutz, German)</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

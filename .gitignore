@@ -1,0 +1,4 @@
+# Legal pages with personal data: kept on the server only (see README.md).
+/legal/
+.env
+__pycache__/

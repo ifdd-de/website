@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Repositories | IFDD</title>
+  <meta name="description" content="Repositories der GitHub-Organisation ifdd-de: Konzept, Dienst-Templates, Pakete und Werkzeuge.">
+  <link rel="canonical" href="https://ifdd.de/de/repositories/">
+  <link rel="alternate" hreflang="en" href="https://ifdd.de/repositories/">
+  <link rel="alternate" hreflang="de" href="https://ifdd.de/de/repositories/">
+  <link rel="alternate" hreflang="x-default" href="https://ifdd.de/repositories/">
+  <link rel="icon" href="../../assets/ifdd-favicon.ico" sizes="any">
+  <link rel="icon" href="../../assets/ifdd-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../de/">
+        <picture>
+          <source srcset="../../assets/ifdd-monogram-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="../../assets/ifdd-monogram-light.svg" alt="IFDD-Logo" width="40" height="40">
+        </picture>
+        <span>ifdd.de</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../../de/example/">Beispiel-Namensraum</a>
+        <a href="../../de/packages/">Pakete</a>
+        <a href="../../de/repositories/" aria-current="page">Repositories</a>
+        <a href="https://github.com/ifdd-de/overview">Konzepte</a>
+        <a class="lang" href="../../repositories/" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+
+    <h1>Repositories</h1>
+    <p class="lead">Alle Repositories der GitHub-Organisation
+    <a href="https://github.com/ifdd-de"><code>ifdd-de</code></a> sind öffentlich und stehen unter der
+    BSD-3-Clause-Lizenz. Ihre Inhalte sind englisch.</p>
+    <p>Jeder Dienst ist ein cookiecutter-Template. Wer ihn betreibt, erzeugt mit
+    <code>cruft</code> eine Instanz und pflegt sie in einem eigenen Repository;
+    <code>cruft update</code> holt spätere Änderungen am Template nach.</p>
+    <h2>Konzept</h2>
+    <div class="table-scroll">
+    <table class="repos">
+      <tbody>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/overview"><code>overview</code></a></td>
+          <td>Konzepte, Namensregeln, Entscheidungen und Logo.</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h2>Dienst-Templates</h2>
+    <div class="table-scroll">
+    <table class="repos">
+      <tbody>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/proxy"><code>proxy</code></a></td>
+          <td>Reverse Proxy (Traefik) mit TLS, Security-Headern und optionalem Login-Gate.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/keycloak"><code>keycloak</code></a></td>
+          <td>Identity Provider (OIDC) mit dem IFDD-Realm und Datenbank-Backup.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/be"><code>be</code></a></td>
+          <td>JSON-LD-Backend: speichert Datensätze bitemporal und prüft Rechte je Context.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/ui"><code>ui</code></a></td>
+          <td>Lesende Web-Oberfläche (react-admin).</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/schema"><code>schema</code></a></td>
+          <td>Statischer Dienst für die JSON-LD-Contexts.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/type"><code>type</code></a></td>
+          <td>Statischer Dienst für die Vokabulare: Bezeichnungen, Hilfetexte, Reihenfolge.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/unit"><code>unit</code></a></td>
+          <td>Statischer Dienst für Einheiten und Größenarten mit Bezug auf QUDT.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/ct"><code>ct</code></a></td>
+          <td>Core Tools: eine CLI, die JSON-LD-Datensätze erzeugt, prüft und lädt.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/ts"><code>ts</code></a></td>
+          <td>Zeitreihen: VictoriaMetrics und Grafana.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/ts-api"><code>ts-api</code></a></td>
+          <td>REST-Schnittstelle zum Lesen und Schreiben von Zeitreihen.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/wf"><code>wf</code></a></td>
+          <td>Workflows: Kestra mit Jupyter-Notebooks.</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h2>Pakete</h2>
+    <div class="table-scroll">
+    <table class="repos">
+      <tbody>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/be-core"><code>be-core</code></a></td>
+          <td>Python-Paket <code>ifdd-be-core</code>, Laufzeit von <code>be</code>.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/ts-core"><code>ts-core</code></a></td>
+          <td>Python-Paket <code>ifdd-ts-core</code>, Laufzeit von <code>ts-api</code>.</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h2>Werkzeuge</h2>
+    <div class="table-scroll">
+    <table class="repos">
+      <tbody>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/tools-pentest"><code>tools-pentest</code></a></td>
+          <td>Schwachstellenanalyse in Containern &mdash; nur für eigene Systeme.</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/ifdd-de/website"><code>website</code></a></td>
+          <td>Diese Website.</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li>ifdd.de contributors</li>
+        <li><a href="https://github.com/ifdd-de/website/blob/main/LICENSE">BSD-3-Clause</a></li>
+        <li>Kontakt: <a href="mailto:maintainers@ifdd.de">maintainers@ifdd.de</a></li>
+        <li><a href="../../impressum/" hreflang="de">Impressum</a></li>
+        <li><a href="../../datenschutz/" hreflang="de">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

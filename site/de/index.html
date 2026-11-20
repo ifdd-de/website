@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IFDD - Integration föderierter Daten-Domänen</title>
+  <meta name="description" content="IFDD lässt Daten in den Domänen, die sie erzeugen, und integriert sie über gemeinsame Bedeutung statt über gemeinsame Ablage.">
+  <link rel="canonical" href="https://ifdd.de/de/">
+  <link rel="alternate" hreflang="en" href="https://ifdd.de/">
+  <link rel="alternate" hreflang="de" href="https://ifdd.de/de/">
+  <link rel="alternate" hreflang="x-default" href="https://ifdd.de/">
+  <link rel="icon" href="../assets/ifdd-favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/ifdd-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../de/">
+        <picture>
+          <source srcset="../assets/ifdd-monogram-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="../assets/ifdd-monogram-light.svg" alt="IFDD-Logo" width="40" height="40">
+        </picture>
+        <span>ifdd.de</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../de/example/">Beispiel-Namensraum</a>
+        <a href="../de/packages/">Pakete</a>
+        <a href="../de/repositories/">Repositories</a>
+        <a href="https://github.com/ifdd-de/overview">Konzepte</a>
+        <a class="lang" href="../" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+
+    <h1>IFDD &mdash; Integration föderierter Daten-Domänen</h1>
+    <p class="lead">Die Daten bleiben, wo sie entstehen. Integriert wird über
+    gemeinsame Bedeutung statt über eine gemeinsame Ablage.</p>
+    <p>Englisch: <span lang="en">Integration of Federated Data Domains</span>
+    &mdash; dieselben vier Buchstaben.</p>
+
+    <h2>Die Idee</h2>
+    <ul class="ideas">
+      <li><strong>Domänen behalten ihre Daten.</strong> Jede Domäne &mdash; ein
+      Team, ein System, eine Person &mdash; veröffentlicht ihre Datensätze am
+      eigenen Endpunkt und bleibt dafür verantwortlich.</li>
+      <li><strong>Ein gemeinsames Schema ersetzt ein gemeinsames System.</strong>
+      Datensätze werden gegen veröffentlichte JSON-LD-Contexts und Vokabulare
+      geprüft und als JSON-LD ausgeliefert. Ein LinkML-Schema als einzige Quelle
+      dieser Beschreibungen ist geplant, aber nicht umgesetzt.</li>
+      <li><strong>Identität ist von Ort getrennt.</strong> Identifier sind
+      dauerhaft; Hosts sind betrieblich und dürfen wechseln.</li>
+    </ul>
+
+    <h2>Was unter ifdd.de läuft</h2>
+    <p>Nur diese Website. Adressen wie <code>id.ifdd.de</code> oder
+    <code>schema.&lt;domain&gt;.ifdd.de</code> in den Konzeptdokumenten
+    beschreiben das Namensmodell; sie werden nicht als öffentliche Dienste
+    betrieben. Die Software läuft dort, wo jemand sie installiert.</p>
+    <p>Auf einen Namen wie <code>breaker.grid.example.ifdd.de</code> gestoßen?
+    Das ist ein Beispielname &mdash; siehe <a href="../de/example/">den
+    Beispiel-Namensraum</a>.</p>
+
+    <h2>Einstieg</h2>
+    <ul class="cards">
+      <li><a href="https://github.com/ifdd-de/overview">Konzepte</a>
+        <p>Ideen, Namensregeln und Entscheidungen im Repository
+        <code>overview</code> (englisch).</p></li>
+      <li><a href="../de/repositories/">Repositories</a>
+        <p>Dienst-Templates, Pakete und Werkzeuge der Organisation
+        <code>ifdd-de</code>.</p></li>
+      <li><a href="../de/packages/">Pakete</a>
+        <p>Python-Pakete auf PyPI.</p></li>
+      <li><a href="../de/example/">Beispiel-Namensraum</a>
+        <p>Was hinter <code>example.ifdd.de</code> steckt.</p></li>
+    </ul>
+
+    <h2>Stand</h2>
+    <p>Früh und offen. Die Konzepte sind aufgeschrieben, die ersten Dienste gibt
+    es als cookiecutter-Templates und Python-Pakete. Die Namensregeln sollen
+    stabil bleiben, alles andere bewegt sich noch.</p>
+
+    <h2>Wer dahintersteht</h2>
+    <p><strong>ifdd.de contributors</strong> &mdash; eine Open-Source-Arbeitsgemeinschaft
+    rund um die GitHub-Organisation <a href="https://github.com/ifdd-de"><code>ifdd-de</code></a>. Alle
+    Repositories sind öffentlich und stehen unter der BSD-3-Clause-Lizenz. Issues
+    und Pull Requests sind im jeweiligen Repository willkommen; für alles andere
+    schreib an <a href="mailto:maintainers@ifdd.de">maintainers@ifdd.de</a>.
+    Inhalte in den Repositories sind englisch.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li>ifdd.de contributors</li>
+        <li><a href="https://github.com/ifdd-de/website/blob/main/LICENSE">BSD-3-Clause</a></li>
+        <li>Kontakt: <a href="mailto:maintainers@ifdd.de">maintainers@ifdd.de</a></li>
+        <li><a href="../impressum/" hreflang="de">Impressum</a></li>
+        <li><a href="../datenschutz/" hreflang="de">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

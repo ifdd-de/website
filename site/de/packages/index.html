@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pakete | IFDD</title>
+  <meta name="description" content="Python-Pakete von IFDD auf PyPI, veröffentlicht von den ifdd.de contributors.">
+  <link rel="canonical" href="https://ifdd.de/de/packages/">
+  <link rel="alternate" hreflang="en" href="https://ifdd.de/packages/">
+  <link rel="alternate" hreflang="de" href="https://ifdd.de/de/packages/">
+  <link rel="alternate" hreflang="x-default" href="https://ifdd.de/packages/">
+  <link rel="icon" href="../../assets/ifdd-favicon.ico" sizes="any">
+  <link rel="icon" href="../../assets/ifdd-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../de/">
+        <picture>
+          <source srcset="../../assets/ifdd-monogram-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="../../assets/ifdd-monogram-light.svg" alt="IFDD-Logo" width="40" height="40">
+        </picture>
+        <span>ifdd.de</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../../de/example/">Beispiel-Namensraum</a>
+        <a href="../../de/packages/" aria-current="page">Pakete</a>
+        <a href="../../de/repositories/">Repositories</a>
+        <a href="https://github.com/ifdd-de/overview">Konzepte</a>
+        <a class="lang" href="../../packages/" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+
+    <h1>Pakete</h1>
+    <p class="lead">Python-Pakete von IFDD auf PyPI, veröffentlicht von den
+    <strong>ifdd.de contributors</strong>. Quelltext, Issues und Changelogs liegen
+    in den GitHub-Repositories.</p>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Paket</th><th>Import</th><th>Zweck</th><th>Links</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><code>ifdd-be-core</code></td>
+          <td><code>ifdd.be.core</code></td>
+          <td>Gemeinsame Laufzeit des IFDD-JSON-LD-Backends: bitemporale Speicherung, JSON-LD-Verarbeitung, OIDC, Zugriffsrechte, API-Dokumentation. Dienste entstehen aus dem Template <a href="https://github.com/ifdd-de/be"><code>be</code></a>.</td>
+          <td><a href="https://pypi.org/project/ifdd-be-core/">PyPI</a><br>
+          <a href="https://github.com/ifdd-de/be-core">GitHub</a></td>
+        </tr>
+        <tr>
+          <td><code>ifdd-ts-core</code></td>
+          <td><code>ifdd.ts.core</code></td>
+          <td>Gemeinsame Laufzeit der IFDD-Zeitreihen-API: Prüfung von Tokens und Speicherorten, Prüfung der Werte gegen die Vokabulare, Lesen und Schreiben in VictoriaMetrics. Dienste entstehen aus dem Template <a href="https://github.com/ifdd-de/ts-api"><code>ts-api</code></a>.</td>
+          <td><a href="https://pypi.org/project/ifdd-ts-core/">PyPI</a><br>
+          <a href="https://github.com/ifdd-de/ts-core">GitHub</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2>Installation</h2>
+    <pre><code>pip install ifdd-be-core
+pip install ifdd-ts-core</code></pre>
+    <p>Die Pakete sind die Laufzeit der Dienste, die aus den Templates entstehen;
+    die Templates bringen die passende Version mit. Versionen folgen dem Schema
+    <code>JJ.MM.N</code>: Jahr, Monat und eine laufende Nummer.</p>
+
+    <h2>Fragen und Probleme</h2>
+    <p>Bitte ein Issue im Repository des Pakets anlegen (gern englisch). Für
+    alles andere: <a href="mailto:maintainers@ifdd.de">maintainers@ifdd.de</a>.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li>ifdd.de contributors</li>
+        <li><a href="https://github.com/ifdd-de/website/blob/main/LICENSE">BSD-3-Clause</a></li>
+        <li>Kontakt: <a href="mailto:maintainers@ifdd.de">maintainers@ifdd.de</a></li>
+        <li><a href="../../impressum/" hreflang="de">Impressum</a></li>
+        <li><a href="../../datenschutz/" hreflang="de">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beispiel-Namensraum | IFDD</title>
+  <meta name="description" content="Was Namen unter example.ifdd.de bedeuten: eine fiktive Organisation für Dokumentation, Templates und Testdaten von IFDD.">
+  <link rel="canonical" href="https://ifdd.de/de/example/">
+  <link rel="alternate" hreflang="en" href="https://ifdd.de/example/">
+  <link rel="alternate" hreflang="de" href="https://ifdd.de/de/example/">
+  <link rel="alternate" hreflang="x-default" href="https://ifdd.de/example/">
+  <link rel="icon" href="../../assets/ifdd-favicon.ico" sizes="any">
+  <link rel="icon" href="../../assets/ifdd-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../de/">
+        <picture>
+          <source srcset="../../assets/ifdd-monogram-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="../../assets/ifdd-monogram-light.svg" alt="IFDD-Logo" width="40" height="40">
+        </picture>
+        <span>ifdd.de</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../../de/example/" aria-current="page">Beispiel-Namensraum</a>
+        <a href="../../de/packages/">Pakete</a>
+        <a href="../../de/repositories/">Repositories</a>
+        <a href="https://github.com/ifdd-de/overview">Konzepte</a>
+        <a class="lang" href="../../example/" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+
+    <h1>Der Beispiel-Namensraum</h1>
+    <p class="lead">Vermutlich bist Du in Dokumentation, Testdaten oder einem
+    Schema auf einen Namen wie <code>breaker.grid.example.ifdd.de</code>
+    gestoßen und fragst Dich, was dahinter steckt. Nichts Echtes &mdash; mit
+    Absicht.</p>
+
+    <h2>Eine fiktive Organisation</h2>
+    <p><code>example</code> ist eine fiktive Organisation. Dokumentation,
+    Templates und Testdaten von IFDD verwenden sie, damit darin keine echte
+    Organisation, kein echtes System und kein echter Hostname vorkommt. Sie
+    betreibt ein Stromnetz und hat zwei Domänen:</p>
+    <ul>
+      <li><strong>grid</strong> führt das Anlagenregister, zum Beispiel
+      Leistungsschalter;</li>
+      <li><strong>ops</strong> führt den Wartungsplan.</li>
+    </ul>
+    <p>Alle Daten des Beispiels sind erzeugt. Sie beschreiben keine echten
+    Anlagen.</p>
+
+    <h2>Zwei Arten von Namen</h2>
+    <h3>Context-Namen</h3>
+    <p><code>breaker.grid.example.ifdd.de</code>,
+    <code>maintenance.ops.example.ifdd.de</code></p>
+    <p>Ein Context-Name benennt einen JSON-LD-Context. Er ist wie ein DNS-Name
+    geschrieben und wird von rechts gelesen: <code>breaker</code> gehört zu
+    <code>grid</code>, <code>grid</code> zu <code>example</code>. Ein solcher
+    Name löst nicht auf und muss es auch nicht. Die Zugriffsrechte folgen ihm:
+    Ein Client mit Leserolle und dem Muster <code>grid.example.ifdd.de</code>
+    darf alle Contexts darunter lesen.</p>
+
+    <h3>Hostnamen von Demo-Knoten</h3>
+    <p><code>&lt;node&gt;.grid.example.ifdd.de</code></p>
+    <p>Für Demo-Knoten reserviert. Heute gibt es keinen.</p>
+    <p class="note">Ein Name unter <code>example.ifdd.de</code> ist also nicht
+    unbedingt ein Host. Löst er nicht auf, ist nichts kaputt.
+    <code>example.ifdd.de</code> selbst führt nur auf diese Seite.</p>
+
+    <h2>Warum ein eigener Namensraum</h2>
+    <p>Beispiele brauchen Namen, die echt aussehen, aber nie mit einer echten
+    Domain kollidieren. Die Idee ist dieselbe wie bei <code>example.org</code>;
+    <code>example.ifdd.de</code> ist allerdings nur durch eine Entscheidung dieses
+    Projekts reserviert, nicht durch einen Standard.</p>
+
+    <h2>Weiterlesen (englisch)</h2>
+    <ul>
+      <li><a href="https://github.com/ifdd-de/overview/blob/main/docs/concepts/00-introduction.md" hreflang="en">A short walk through IFDD</a> &mdash;
+      die Beispiel-Organisation Schritt für Schritt</li>
+      <li><a href="https://github.com/ifdd-de/overview/blob/main/docs/concepts/02-namespace.md" hreflang="en">Namespace: names as architecture</a></li>
+      <li><a href="https://github.com/ifdd-de/overview/blob/main/docs/decisions/0002-reserve-example-ifdd-de.md" hreflang="en">Entscheidung 0002: example.ifdd.de reservieren</a></li>
+    </ul>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li>ifdd.de contributors</li>
+        <li><a href="https://github.com/ifdd-de/website/blob/main/LICENSE">BSD-3-Clause</a></li>
+        <li>Kontakt: <a href="mailto:maintainers@ifdd.de">maintainers@ifdd.de</a></li>
+        <li><a href="../../impressum/" hreflang="de">Impressum</a></li>
+        <li><a href="../../datenschutz/" hreflang="de">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

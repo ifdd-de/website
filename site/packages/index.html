@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Packages | IFDD</title>
+  <meta name="description" content="Python packages of IFDD on PyPI, published by ifdd.de contributors.">
+  <link rel="canonical" href="https://ifdd.de/packages/">
+  <link rel="alternate" hreflang="en" href="https://ifdd.de/packages/">
+  <link rel="alternate" hreflang="de" href="https://ifdd.de/de/packages/">
+  <link rel="alternate" hreflang="x-default" href="https://ifdd.de/packages/">
+  <link rel="icon" href="../assets/ifdd-favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/ifdd-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../">
+        <picture>
+          <source srcset="../assets/ifdd-monogram-dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="../assets/ifdd-monogram-light.svg" alt="IFDD logo" width="40" height="40">
+        </picture>
+        <span>ifdd.de</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../example/">Example namespace</a>
+        <a href="../packages/" aria-current="page">Packages</a>
+        <a href="../repositories/">Repositories</a>
+        <a href="https://github.com/ifdd-de/overview">Concepts</a>
+        <a class="lang" href="../de/packages/" hreflang="de" lang="de">Deutsch</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+
+    <h1>Packages</h1>
+    <p class="lead">Python packages of IFDD on PyPI, published by
+    <strong>ifdd.de contributors</strong>. Source code, issues and changelogs are
+    in the GitHub repositories.</p>
+
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Distribution</th><th>Import</th><th>Purpose</th><th>Links</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><code>ifdd-be-core</code></td>
+          <td><code>ifdd.be.core</code></td>
+          <td>Shared runtime of the IFDD JSON-LD backend: bitemporal storage, JSON-LD processing, OIDC, access rights, API documentation. Services are generated from the <a href="https://github.com/ifdd-de/be"><code>be</code></a> template.</td>
+          <td><a href="https://pypi.org/project/ifdd-be-core/">PyPI</a><br>
+          <a href="https://github.com/ifdd-de/be-core">GitHub</a></td>
+        </tr>
+        <tr>
+          <td><code>ifdd-ts-core</code></td>
+          <td><code>ifdd.ts.core</code></td>
+          <td>Shared runtime of the IFDD time series API: token and store checks, checks of samples against the vocabularies, reading and writing in VictoriaMetrics. Services are generated from the <a href="https://github.com/ifdd-de/ts-api"><code>ts-api</code></a> template.</td>
+          <td><a href="https://pypi.org/project/ifdd-ts-core/">PyPI</a><br>
+          <a href="https://github.com/ifdd-de/ts-core">GitHub</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <h2>Install</h2>
+    <pre><code>pip install ifdd-be-core
+pip install ifdd-ts-core</code></pre>
+    <p>The packages are the runtime of services generated from the templates; the
+    templates bring the matching version. Versions follow the scheme
+    <code>YY.MM.N</code>: year, month and a running number.</p>
+
+    <h2>Questions and problems</h2>
+    <p>Please open an issue in the repository of the package. For anything else:
+    <a href="mailto:maintainers@ifdd.de">maintainers@ifdd.de</a>.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li>ifdd.de contributors</li>
+        <li><a href="https://github.com/ifdd-de/website/blob/main/LICENSE">BSD-3-Clause</a></li>
+        <li>Contact: <a href="mailto:maintainers@ifdd.de">maintainers@ifdd.de</a></li>
+        <li><a href="../impressum/" hreflang="de">Legal notice (Impressum, German)</a></li>
+        <li><a href="../datenschutz/" hreflang="de">Privacy (Datenschutz, German)</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

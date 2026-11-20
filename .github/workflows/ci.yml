@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Static checks (links, languages, no external resources)
+        run: python tests/check_site.py
+      - name: Compose file is valid
+        run: docker compose config --quiet
+      - name: Smoke test with the real image
+        run: |
+          cp -r legal.example legal
+          docker compose up --detach --wait --wait-timeout 60
+          tests/smoke.sh http://127.0.0.1:8080
+      - name: Container log on failure
+        if: failure()
+        run: docker compose logs
+      - name: Stop
+        if: always()
+        run: docker compose down
